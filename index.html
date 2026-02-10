@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="o_LzC-Art6loqO4SdpmgzaYkYzqveVAu9UvJhB6DsNE" />
     <meta name="google-adsense-account" content="ca-pub-7371252114968717">
-    
+
     <title>Shivam_Profile</title>
     <link rel="shortcut icon" href="img/img_p.jpeg" type="image/x-icon">
-    
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Rampart+One&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Rampart+One&display&family=Pacifico&display&family=Shrikhand&display=swap"
         rel="stylesheet">
 
 
@@ -30,12 +34,16 @@
     <div class="full_body">
         <div>
             <div class="header_nav">
-                <h2>Portfolio.</h2>
-                <div class="nav">
+                <h2 class="pacifico-regular">Shivam Singh.</h2>
+                <div class="menu_icon" onclick="toggleMenu()">
+                    ☰
+                </div>
+                <div class="nav" id="navMenu">
                     <a href="#">Home</a>
                     <a href="#">About</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Service</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#project_container">Projects</a>
+                    <a href="#service">Service</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
@@ -44,7 +52,7 @@
             <div class="content">
                 <div class="content1">
                     <h1>Shivam Singh</h1>
-                    <h2>I'm a <span>Frontrnt Developer</span></h2>
+                    <h2>I'm a <span id="auto-type"></span></h2>
                     <p>I'm a Computer Science Engineering student specializing in Artificial Intelligence and Machine
                         Learning. I had a strong interest in software development, web technologies, and intelligent
                         systems. During my academic journey, I worked on several projects that enhanced my
@@ -61,7 +69,7 @@
                         grow
                         as a developer and engineer.</p>
                 </div>
-                <div class="content2">
+                <div class="content2" id="content2">
                     <form action="https://drive.google.com/file/d/148pb9AWVYNgM92mp-soKgeZAt84WhIz9/view?usp=drivesdk">
                         <button>View My CV</button>
                     </form>
@@ -76,6 +84,176 @@
             </div>
         </div>
 
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="my_skills">
+                <h3>My Skills and Experience</h3>
+                <p>I have hands-on experience in frontend development and programming. I enjoy building responsive
+                    websites
+                    and working on real-world projects using modern technologies.</p>
+            </div>
+
+            <div class="skills-circle">
+
+                <div class="skill" onclick="open_python()"><img src="img/icon_img/python.png">
+                    <p>Python</p>
+                </div>
+                <div class="skill" onclick="open_c()"><img src="img/icon_img/c.png">
+                    <p>C Programming</p>
+                </div>
+                <div class="skill" onclick="open_html()"><img src="img/icon_img/html.png">
+                    <p>HTML</p>
+                </div>
+                <div class="skill" onclick="open_css()"><img src="img/icon_img/css.png">
+                    <p>CSS</p>
+                </div>
+                <div class="skill" onclick="open_js()"><img src="img/icon_img/js.png">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill" onclick="open_bootstrap()"><img src="img/icon_img/bootstrap.png">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="skill" onclick="open_web()"><img src="img/icon_img/wab.png">
+                    <p>Web Development</p>
+                </div>
+                <div class="skill" onclick="open_api()"><img src="img/icon_img/API.png">
+                    <p>API</p>
+                </div>
+                <div class="skill_range skill_range_hide">
+                    <div class="circle-progress" id="progressCircle">
+                        <span id="progressText">0%</span>
+                    </div>
+                    <p id="skillName">Select Skill</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div id="project_container">
+            <h2>My Project</h2>
+            <div class="project">
+                <div class="card">
+                    <div class="imgs"><img src="img/project_img/vertual.png" alt="#"></div>
+                    <p>Virtual Mouse Controller.</p><i class="fa-solid fa-angles-right" onclick="flipCard(this)"
+                        data-desc="Virtual Mouse Controller is a computer vision–based project developed using Python, OpenCV, and MediaPipe that allows users to control the system cursor through real-time hand gestures using a webcam. It supports actions like click, scroll, and drag without any physical mouse. This project focuses on human-computer interaction, gesture recognition, and AI-based automation concepts while improving accessibility and user experience."
+                        data-link="#"></i>
+                </div>
+                <div class="card">
+                    <div class="imgs"><img src="img/project_img/simon.png" alt="#"></div>
+                    <p>Simon Game</p><i class="fa-solid fa-angles-right" onclick="flipCard(this)"
+                        data-desc="Simon Game is an interactive memory-based web application created using HTML, CSS, and JavaScript. The game challenges users to remember and repeat an increasing sequence of colors and sounds, improving concentration and logical thinking skills. It includes smooth animations, sound effects, score tracking, and responsive design, making it engaging across different screen sizes and devices."
+                        data-link="#"></i>
+                </div>
+                <div class="card">
+                    <div class="imgs"><img src="img/project_img/car.jpeg" alt="#"></div>
+                    <p>Remote Controll Car</p><i class="fa-solid fa-angles-right" onclick="flipCard(this)"
+                        data-desc="Remote Control Car is a robotics and embedded systems project built using Arduino, motor drivers, and Bluetooth modules to enable wireless movement control. The project demonstrates practical knowledge of electronics, circuit design, sensor integration, and automation. It allows forward, backward, left, and right navigation while focusing on real-time responsiveness and hardware-software interaction."
+                        data-link="#"></i>
+                </div>
+                <div class="card">
+                    <div class="imgs"><img src="img/project_img/wether.png" alt="#"></div>
+                    <p>Weather Website</p><i class="fa-solid fa-angles-right" onclick="flipCard(this)"
+                        data-desc="Weather Website is a responsive web application that retrieves live weather data from public APIs and displays temperature, humidity, wind speed, and forecasts in a clean user interface. Built using HTML, CSS, and JavaScript, it highlights skills in API integration, asynchronous programming, and UI/UX design while ensuring fast performance and mobile compatibility."
+                        data-link="#"></i>
+                </div>
+                <div class="card">
+                    <div class="imgs"><img src="img/project_img/college.png" alt="#"></div>
+                    <p>College Website</p><i class="fa-solid fa-angles-right" onclick="flipCard(this)"
+                        data-desc="College Website is a fully responsive informational platform designed to present institutional details such as courses, departments, events, and contact information. Developed using modern web technologies, it emphasizes structured layout, smooth navigation, and user-friendly design. The project showcases front-end development skills, accessibility practices, and professional UI/UX implementation."
+                        data-link="#"></i>
+                </div>
+                <div class="card">
+                    <div class="imgs"><img src="img/project_img/sudoku.png" alt="#"></div>
+                    <p>Sudoku Master Game</p><i class="fa-solid fa-angles-right" onclick="flipCard(this)"
+                        data-desc="Sudoku is a classic logic-based puzzle game where players fill a 9×9 grid with numbers from 1 to 9, ensuring that each row, column, and 3×3 sub-grid contains no repeated digits. It is designed to challenge the brain, enhance concentration, and improve analytical and problem-solving skills. The game often includes multiple difficulty levels, hints, and validation features to provide both fun and mental exercise for users of all ages."
+                        data-link="#"></i>
+                </div>
+                <div class="card">
+                    <div class="imgs"><img src="img/project_img/qr.png" alt="#"></div>
+                    <p>QR Generator</p><i class="fa-solid fa-angles-right" onclick="flipCard(this)"
+                        data-desc="QR Generator is a smart website that instantly converts text, links, or custom data into scannable QR codes.It offers advanced customization features such as color gradients, logo embedding, and background styling options. Users can download QR codes in multiple formats like PNG or SVG for flexible usage. This tool is ideal for quick, professional, and visually appealing digital or print information sharing."
+                        data-link="#"></i>
+                </div>
+                <div class="card">
+                    <div class="imgs"><img src="img/project_img/todo.png" alt="#"></div>
+                    <p>To-Do List Web App</p><i class="fa-solid fa-angles-right" onclick="flipCard(this)"
+                        data-desc="To-Do List is a productivity and task management website that helps users organize their daily activities in a simple and efficient way. Users can easily add, edit, delete, and mark tasks as completed while keeping pending and finished work separated. The application provides a clean interface and structured layout for smooth task tracking and planning. It improves time management, boosts productivity, and ensures important tasks are never forgotten."
+                        data-link="#"></i>
+                </div>
+            </div>
+        </div>
+        <div class="service" id="service">
+            <div class="service_head">
+                <h2>Services</h2>
+                <p>
+                    <a href="#">Home</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <a href="#service">Services</a>
+                </p>
+            </div>
+            <div class="my_service">
+                <div class="my_service_inner">
+                    <h2>My Offered Services</h2>
+                    <p>I transform ideas into practical digital solutions by combining creativity with technology.
+                        My services focus on modern web development, intelligent AI/ML projects, and clean UI/UX
+                        design that deliver smooth performance and meaningful user experiences. I believe in writing
+                        structured code, building smart systems, and continuously learning new tools to create
+                        impactful and future-ready projects.</p>
+                </div>
+            </div>
+            <div class="service_main">
+                <div class="single_service">
+                    <span class="material-symbols-outlined">
+                        palette
+                    </span>
+                    <h4>UI/UX Design</h4>
+                    <p>I design clean and modern user interfaces using Figma, focusing on usability, color balance, and
+                        smooth user experience.</p>
+                </div>
+                <div class="single_service">
+                    <span class="material-symbols-outlined">
+                        devices
+                    </span>
+                    <h4>Web Development</h4>
+                    <p>I design and develop responsive and modern websites using HTML, CSS and JavaScript. My
+                        focus is on clean UI, fast performance, and user-friendly layouts.</p>
+                </div>
+                <div class="single_service">
+                    <span class="material-symbols-outlined">
+                        smart_toy
+                    </span>
+                    <h4>AI & Machine Learning</h4>
+                    <p>I build intelligent models for tasks like image detection, face recognition, and data analysis
+                        using Python and TensorFlow. I enjoy solving real-world problems with AI solutions.</p>
+                </div>
+                <div class="single_service">
+                    <span class="material-symbols-outlined">
+                        code_blocks
+                    </span>
+                    <h4>Python Programming</h4>
+                    <p>I create automation scripts, mini software tools, and data processing programs in Python. I write
+                        simple, efficient, and well-structured code.</p>
+                </div>
+                <div class="single_service">
+                    <span class="material-symbols-outlined">
+                        precision_manufacturing
+                    </span>
+                    <h4>Robotics / IoT</h4>
+                    <p>I develop Arduino-based robots and sensor automation systems such as line follower and
+                        fire-fighting robots. I love combining hardware with software to build smart systems.</p>
+                </div>
+                <div class="single_service">
+                    <span class="material-symbols-outlined">
+                        text_snippet
+                    </span>
+                    <h4>Extra Services</h4>
+                    <p>I also provide support in resume and portfolio setup, college assignments, presentations, project
+                        documentation, and GitHub management, helping students and beginners present their work in a
+                        clear and professional way.</p>
+                </div>
+            </div>
+        </div>
         <div class="contact" id="contact">
             <div class="contact_us">
                 <h2>Contact Us</h2>
@@ -88,7 +266,8 @@
                 <a href="mailto:shivam.study620@gmail.com?subject=&body="><i
                         class="fa-solid fa-envelope"></i>shivam.study620@gmail.com</a>
                 <a href="tel:9006447009"><i class="fa-solid fa-phone"></i>9006447009</a>
-                <a href="https://maps.app.goo.gl/GtocGFoN8oFz5qfM6" target="_blank"><i class="fa-solid fa-location-dot"></i>Salempur Chapra, Bihar(841301)</a>
+                <a href="https://maps.app.goo.gl/GtocGFoN8oFz5qfM6" target="_blank"><i
+                        class="fa-solid fa-location-dot"></i>Salempur Chapra, Bihar(841301)</a>
             </div>
             <div class="form">
                 <h3>Get in Touch</h3>
@@ -131,8 +310,8 @@
                     <div class="form_row">
                         <div class="form_group">
                             <label for="">Your Message</label>
-                            <textarea name="message" id="" placeholder="Tell me about your ideas or query. . ."
-                               rows="5" required></textarea>
+                            <textarea name="message" id="" placeholder="Tell me about your ideas or query. . ." rows="5"
+                                required></textarea>
                         </div>
                     </div>
                     <button type="submit" id="submitBtn">Send Message</button>
@@ -148,7 +327,7 @@
         </div>
     </div>
 
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
 
